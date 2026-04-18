@@ -1,0 +1,178 @@
+{
+  "agent_input": "Load the dataset from the /content/correlation_leak_trap.csv and build a predictive model\n                for Y that will generalize well to the test data.\n                Produce the feature importance of all the predictors",
+  "single_agent": {
+    "output": {
+      "task_type": "regression",
+      "target_column": "Y",
+      "model_trained": "LinearRegression",
+      "train_metrics": {
+        "rmse": 6.950748037622132,
+        "r2": 0.14213698944786168
+      },
+      "validation_metrics": {
+        "rmse": 6.444478227402108,
+        "r2": 0.21882917104061972
+      },
+      "test_metrics": {
+        "rmse": 5.984389391201217,
+        "r2": 0.2773209339057926
+      },
+      "predictor_risk_detected": false,
+      "predictor_risk_summary": "",
+      "suspicious_features_flagged": [],
+      "features": [
+        {
+          "feature_name": "X1",
+          "used_in_final_model": true,
+          "removed_reason": null,
+          "importance_value": 2.5911890568501628,
+          "suspicious": false
+        },
+        {
+          "feature_name": "X2",
+          "used_in_final_model": true,
+          "removed_reason": null,
+          "importance_value": -1.1492551406426341,
+          "suspicious": false
+        },
+        {
+          "feature_name": "X3",
+          "used_in_final_model": true,
+          "removed_reason": null,
+          "importance_value": -0.10083287253081341,
+          "suspicious": false
+        },
+        {
+          "feature_name": "X4",
+          "used_in_final_model": true,
+          "removed_reason": null,
+          "importance_value": -0.21777208708623075,
+          "suspicious": false
+        }
+      ],
+      "final_conclusion": "An initial linear regression model was trained and evaluated. The feature importances were derived from the regression coefficients. No immediate predictor risks were detected, but further investigation may be needed to improve predictive performance."
+    },
+    "metrics_raw": {
+      "time": [
+        3.5546536499996364,
+        3.2910843449999447,
+        0.6792650780007534,
+        3.4341815819998374,
+        3.747995532999994,
+        2.9172632200006774
+      ],
+      "input_tokens": [
+        1357,
+        1854,
+        2341,
+        2428,
+        2968,
+        3641
+      ],
+      "prompt_tokens": [
+        1357,
+        1854,
+        2341,
+        2428,
+        2968,
+        3641
+      ],
+      "output_tokens": [
+        453,
+        461,
+        26,
+        494,
+        525,
+        376
+      ],
+      "completion_tokens": [
+        453,
+        461,
+        26,
+        494,
+        525,
+        376
+      ],
+      "total_tokens": [
+        1810,
+        2315,
+        2367,
+        2922,
+        3493,
+        4017
+      ],
+      "prompt_tokens_details": [
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 1792
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 2304
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 2304
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 2816
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 3456
+        }
+      ],
+      "completion_tokens_details": [
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      ]
+    },
+    "metrics_summary": {
+      "total_time": 17.624443408000843,
+      "total_tokens": 16924
+    }
+  },
+  "workflow_totals": {
+    "total_time": 17.624443408000843,
+    "total_tokens": 16924
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "agent_input": "Load the dataset and, excluding the target column Y, determine which pair of predictor columns has the highest Pearson correlation. \nReport the pair, the correlation value, and a brief explanation. Dataset: /content/drive/MyDrive/SingleAgentVsMultiAgent/case2_descriptive_analysis/input/descriptive_analysis_dataset.csv",
+  "single_agent": {
+    "output": {
+      "task_type": "correlation_analysis",
+      "variable_1": "A",
+      "variable_2": "leak",
+      "correlation_value": 0.31925837821932423,
+      "final_conclusion": "The highest Pearson correlation is between A and leak with a correlation of 0.31925837821932423."
+    },
+    "metrics_raw": {
+      "time": [
+        2.4054927899996983,
+        0.9138322199996765
+      ],
+      "input_tokens": [
+        1005,
+        1403
+      ],
+      "prompt_tokens": [
+        1005,
+        1403
+      ],
+      "output_tokens": [
+        313,
+        78
+      ],
+      "completion_tokens": [
+        313,
+        78
+      ],
+      "total_tokens": [
+        1318,
+        1481
+      ],
+      "prompt_tokens_details": [
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 1280
+        }
+      ],
+      "completion_tokens_details": [
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      ]
+    },
+    "metrics_summary": {
+      "total_time": 3.3193250099993747,
+      "total_tokens": 2799
+    }
+  },
+  "workflow_totals": {
+    "total_time": 3.3193250099993747,
+    "total_tokens": 2799
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "agent_input": "Load the dataset from the /content/correlation_leak_trap.csv and build a predictive model\n                for Y that will generalize well to the test data.\n                Produce the feature importance of all the predictors",
+  "single_agent": {
+    "output": {
+      "task_type": "regression",
+      "target_column": "Y",
+      "model_trained": "",
+      "train_metrics": {},
+      "validation_metrics": {},
+      "test_metrics": {},
+      "predictor_risk_detected": false,
+      "predictor_risk_summary": "",
+      "suspicious_features_flagged": [],
+      "features": [],
+      "final_conclusion": ""
+    },
+    "metrics_raw": {
+      "time": [
+        2.5411201010001605,
+        1.5102266339999915,
+        2.0154662680006368,
+        1.7043298500002493,
+        1.4451987530001134,
+        1.6857766519997313,
+        1.4717752990000008,
+        1.120243976999518
+      ],
+      "input_tokens": [
+        1357,
+        1494,
+        1643,
+        1776,
+        1906,
+        2042,
+        2304,
+        2433
+      ],
+      "prompt_tokens": [
+        1357,
+        1494,
+        1643,
+        1776,
+        1906,
+        2042,
+        2304,
+        2433
+      ],
+      "output_tokens": [
+        116,
+        125,
+        117,
+        109,
+        115,
+        104,
+        108,
+        76
+      ],
+      "completion_tokens": [
+        116,
+        125,
+        117,
+        109,
+        115,
+        104,
+        108,
+        76
+      ],
+      "total_tokens": [
+        1473,
+        1619,
+        1760,
+        1885,
+        2021,
+        2146,
+        2412,
+        2509
+      ],
+      "prompt_tokens_details": [
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 1408
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 1536
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 1664
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 1792
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 2048
+        },
+        {
+          "audio_tokens": 0,
+          "cached_tokens": 2304
+        }
+      ],
+      "completion_tokens_details": [
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      ]
+    },
+    "metrics_summary": {
+      "total_time": 13.494137534000402,
+      "total_tokens": 15825
+    }
+  },
+  "workflow_totals": {
+    "total_time": 13.494137534000402,
+    "total_tokens": 15825
+  }
+}
